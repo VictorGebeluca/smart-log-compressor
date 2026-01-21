@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Configurações de Ambiente */
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["esnext"],
+    "types": ["node", "node-cron","jest"],
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Saídas e Debugging */
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Strict Mode & Segurança */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Estilo e Módulos */
+    "verbatimModuleSyntax": false, // Alterado para evitar erros de importação de tipos
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+    
+    /* Suporte a JSX */
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
